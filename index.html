@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Disclaimer Popup -->
+    <div id="disclaimer-popup" class="popup">
+        <div class="popup-content">
+            <h2>Disclaimer</h2>
+            <p>This application uses the CoinGecko API to fetch real-time cryptocurrency prices. The API allows us to retrieve current prices, market capitalization, and other financial data for various cryptocurrencies.</p>
+            <p>By using this application, you can search for specific cryptocurrencies, track their prices in real-time, and add them to a watchlist for easy access. Please note that the prices displayed are for informational purposes only and may not reflect the latest market conditions.</p>
+            <button id="close-popup">I Understand</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Cryptocurrency Price Tracker</h1>
+        <input type="text" id="search-input" placeholder="Enter cryptocurrency name or symbol..." autofocus>
+        <button id="search-button">Search</button>
+        
+        <div id="crypto-container"></div>
+        
+        <h2>Watchlist</h2>
+        <div id="watchlist-container"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
